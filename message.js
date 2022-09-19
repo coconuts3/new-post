@@ -1,5 +1,5 @@
-Display.InputDialog Title: $'''URL''' Message: $'''コメントを送りたい人のURLを貼ってね!''' InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> UserInput ButtonPressed=> ButtonPressed
-Display.InputDialog Title: $'''メッセージ''' Message: $'''メッセージの内容を入力してね！''' InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> UserInput2 ButtonPressed=> ButtonPressed2
+Display.InputDialog Title: $'''URL''' Message: $'''Paste the URL of the person you want to send a comment to!''' InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> UserInput ButtonPressed=> ButtonPressed
+Display.InputDialog Title: $'''メッセージ''' Message: $'''Please enter your message!''' InputType: Display.InputType.SingleLine IsTopMost: False UserInput=> UserInput2 ButtonPressed=> ButtonPressed2
 WebAutomation.LaunchChrome.LaunchChrome Url: UserInput WindowState: WebAutomation.BrowserWindowState.Normal ClearCache: False ClearCookies: False WaitForPageToLoadTimeout: 60 Timeout: 60 BrowserInstance=> Browser
 WebAutomation.PopulateTextField.PopulateTextField BrowserInstance: Browser Control: appmask['Recording']['Text area'] Text: UserInput2 Mode: WebAutomation.PopulateTextMode.Replace EmulateTyping: True UnfocusAfterPopulate: False WaitForPageToLoadTimeout: 60
 @@source: 'Recorder'
